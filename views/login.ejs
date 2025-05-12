@@ -1,0 +1,21 @@
+<%- include("templates/header", { title:"Login"}) %>
+
+    <h2 class="text-2xl text-center mt-6">Login</h2>
+
+    <form action="/login" method="POST" class="max-w-md mx-auto mt-5 space-y-6">
+        <div>
+            <label class="block font-medium">Email:</label>
+            <input type="email" name="email" required class="w-full mt-1 py-2 border rounded" />
+        </div>
+
+        <div>
+            <label class="block font-medium">Password:</label>
+            <input type="password" name="password" required class="w-full mt-1 p-2 border rounded" />
+        </div>
+
+        <button type="submit" class="w-full mt-4 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded">
+            Login
+        </button>
+    </form>
+
+    <%- include("templates/footer") %>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= title %>
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+    <header class="p-4 bg-green-200 shadow-md flex flex-col sm:flex-row items-center">
+        <h1 class="text-2xl font-bold text-green-800 mb-2 sm:mb-0">
+            COMP 2537 Assignment 2
+        </h1>
+
+        <nav class="flex flex-1 justify-center space-x-8 text-green-700">
+            <a href="/" class="hover:text-green-900">Home</a>
+            <a href="/members" class="hover:text-green-900">Members</a>
+            <a href="/login" class="hover:text-green-900">Login</a>
+            <a href="/admin" class="hover:text-green-900">Admin</a>
+            <a href="/404" class="hover:text-green-900">404</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow p-6">

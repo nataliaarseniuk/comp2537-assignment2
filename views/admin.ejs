@@ -1,0 +1,13 @@
+<%- include("templates/header", { title: "Admin Panel" }) %>
+
+    <div class="max-w-3xl mx-auto mt-8">
+        <h2 class="text-2xl font-semibold mb-6">Users</h2>
+
+        <ul class="space-y-4">
+            <% users.forEach(u=> { %>
+                <%- include("templates/user", { user: u }) %>
+                    <% }) %>
+        </ul>
+    </div>
+
+    <%- include("templates/footer") %>

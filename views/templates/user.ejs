@@ -1,0 +1,15 @@
+<li class="p-4 border rounded flex justify-between items-center">
+    <span class="font-medium">
+        <%= user.name %> — <%= user.email %> — <%= user.user_type %>
+    </span>
+
+    <% if (user.user_type==='user' ) { %>
+        <a href="/admin/promote/<%= encodeURIComponent(user.email) %>" class="text-green-600 hover:underline">
+            Promote to Admin
+        </a>
+        <% } else { %>
+            <a href="/admin/demote/<%= encodeURIComponent(user.email) %>" class="text-red-600 hover:underline">
+                Demote to User
+            </a>
+            <% } %>
+</li>

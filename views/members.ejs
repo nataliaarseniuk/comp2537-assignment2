@@ -1,0 +1,13 @@
+<%- include("templates/header", { title: "Members Area" }) %>
+
+    <h2 class="text-2xl mb-4 text-center">Hello, <%= user.name %>!</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center place-items-center">
+        <% images.forEach((image, idx)=> { %>
+            <img src="<%= image %>" alt="dog <%= idx + 1 %>" class="rounded-2xl shadow-lg border-4 border-pink-400" />
+            <% }) %>
+    </div>
+
+    <a href="/logout" class="text-center block mt-6 text-pink-400 hover:underline">Logout</a>
+
+    <%- include("templates/footer") %>
